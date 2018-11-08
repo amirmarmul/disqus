@@ -1,0 +1,36 @@
+{
+    "name": "kcdev/disqus",
+    "description": "Laravel - Disqus Integration | Integrating your application with Disqus platform.",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.5",
+        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amir Marmul",
+            "email": "amiruddinmarmul@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Kcdev\\Disqus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kcdev\\Disqus\\DisqusServiceProvider"
+            ],
+            "aliases": {
+                "Disqus": "Kcdev\\Disqus\\Facades\\Disqus"
+            }
+        }
+    }
+}
